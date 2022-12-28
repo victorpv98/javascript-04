@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejecicios - 04</title>
+  </head>
+  <body>
+    <section>
+      <form>
+        <h1>Suma de cuadrados de las cifras</h1>
+        <label for="number">Ingresa un número de 3 dígitos:</label><br />
+        <input type="text" id="number" /><br />
+        <button type="button" onclick="calculate()">Calcular</button>
+      </form>
+      <br />
+      La suma es: <span id="result"></span>
+    </section>
+    <section>
+      <h1>Validación de contraseña</h1>
+      <form>
+        <label for="password">Contraseña:</label><br />
+        <input type="password" id="password" name="password" /><br />
+        <button type="button" onclick="validate()">Validar</button>
+      </form>
+      <p id="resultElement"></p>
+    </section>
+    <section>
+      <h1>Validación de correo</h1>
+      <form>
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required>
+        <input type="submit" value="Enviar" onclick="return validateEmail()">
+      </form>
+    </section>
+
+    <script src="js/script01.js"></script>
+  </body>
+</html>
